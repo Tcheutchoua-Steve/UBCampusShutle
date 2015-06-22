@@ -6,19 +6,19 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class BusSchedule extends ActionBarActivity {
+public class DropPoints extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.bus_schedule);
+        setContentView(R.layout.drop_points);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.bus_schedule, menu);
+        getMenuInflater().inflate(R.menu.drop_points_menu, menu);
         return true;
     }
 

@@ -11,5 +11,25 @@
     <string name="title_activity_gen_info">GenInfo</string>
     <string name="title_activity_bus_schedule">BusSchedule</string>
     <string name="title_activity_drivers">Drivers</string>
+    <string name="title_activity_land_menu">LandMenu</string>
 
+
+    // In GenInfo
+    <string name="PriceTitle">Ticket Prices</string>
+    <string name="ticketPrice1">One way Ticket : 75 Frs</string>
+    <string name="ticketPrice2">Two way Ticket : 100 Frs</string>
+    <string name="salePointLocation">Sale Point</string>
+    <string name="salePoint">Tickets are Sold At the Entrance of The School</string>
+    <string name="title_activity_ticket">Ticket</string>
+    <string name="title_activity_drop_points">DropPoints</string>
+
+    // Drop points
+    <string name="title"> List of Drop Points</string>
+    <string name="facArts">Facultt of Arts</string>
+    <string name="uBlock">U Block</string>
+    <string name="unesco">UNESCO Building</string>
+    <string name="facEdu">Faculty Of Education</string>
+    <string name="A600">Amphitheatre 600</string>
+    <string name="restau">Restaurant</string>
+    <string name="entrance">University Entrance</string>
 </resources>

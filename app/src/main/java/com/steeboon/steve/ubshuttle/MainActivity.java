@@ -68,7 +68,7 @@ public class MainActivity extends ActionBarActivity {
 
                 public void onClick(View v) {
                     // TODO Auto-generated method stub
-                    Intent intent = new Intent(v.getContext(), LandingMenu.class);
+                    Intent intent = new Intent(v.getContext(), LandMenu.class);
                     startActivityForResult(intent, 0);
 
                 }

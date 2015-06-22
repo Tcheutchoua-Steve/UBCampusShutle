@@ -13,15 +13,15 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 
-public class GenInfo extends ListActivity {
+public class LandMenu extends ListActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.land_menu);
-        String[] menu = getResources().getStringArray(R.array.genInfoOptions);
+        String[] menu = getResources().getStringArray(R.array.mainMenu);
 
-        this.setListAdapter(new ArrayAdapter<String>(this, R.layout.gen_info, R.id.genInfoID, menu));
+        this.setListAdapter(new ArrayAdapter<String>(this, R.layout.land_menu, R.id.landMenu, menu));
 
         //Create listview for the regions
         ListView lv = getListView();
@@ -32,22 +32,28 @@ public class GenInfo extends ListActivity {
                 String opt = ((TextView) view).getText().toString();
 
                 //Identifying the deferent items clicked
-                if (opt.equals("Tickets")) {
-                    Intent i = new Intent(getApplicationContext(), Ticket.class);
+                if (opt.equals("General Information")){
+                    Intent i = new Intent(getApplicationContext(), GenInfo.class);
                     startActivity(i);
-                } else if (opt.equals("Drop Points")) {
-                    Intent i = new Intent(getApplicationContext(), DropPoints.class);
+                }
+                else if (opt.equals("Bus Schedules")){
+                    Intent i = new Intent(getApplicationContext(), BusSchedule.class);
+                    startActivity(i);
+                }
+                else if (opt.equals("Drivers Profile")){
+                    Intent i = new Intent(getApplicationContext(), Drivers.class);
                     startActivity(i);
                 }
             }
         });
+
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.gen_info_menu, menu);
+        getMenuInflater().inflate(R.menu.land_menu, menu);
         return true;
     }
 

@@ -48,6 +48,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.steeboon.steve.ubshuttle.MainActivity" />
         </activity>
+        <activity
+            android:name=".LandMenu"
+            android:label="@string/title_activity_land_menu"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.steeboon.steve.ubshuttle.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Ticket"
+            android:label="@string/title_activity_ticket" >
+        </activity>
+        <activity
+            android:name=".DropPoints"
+            android:label="@string/title_activity_drop_points" >
+        </activity>
     </application>
 
 </manifest>
