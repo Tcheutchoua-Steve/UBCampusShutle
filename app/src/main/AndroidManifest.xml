@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LandingMenu"
+            android:name=".LandMenu"
             android:label="@string/title_activity_landing_menu"
             android:parentActivityName=".MainActivity" >
             <meta-data
@@ -43,14 +43,6 @@
         <activity
             android:name=".Drivers"
             android:label="@string/title_activity_drivers"
-            android:parentActivityName=".MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.steeboon.steve.ubshuttle.MainActivity" />
-        </activity>
-        <activity
-            android:name=".LandMenu"
-            android:label="@string/title_activity_land_menu"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

@@ -1,5 +1,6 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
@@ -10,32 +11,38 @@
 
     <TextView
         android:text="@string/PriceTitle"
+        android:textStyle="bold"
         android:paddingLeft="5dp"
+        android:height="35dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <TextView
         android:text="@string/ticketPrice1"
         android:paddingLeft="20dp"
-
+        android:height="35dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <TextView
         android:text="@string/ticketPrice2"
         android:paddingLeft="20dp"
+        android:height="35dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <TextView
         android:text="@string/salePointLocation"
+        android:textStyle="bold"
         android:paddingLeft="5dp"
+        android:height="35dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <TextView
         android:text="@string/salePoint"
         android:paddingLeft="20dp"
+        android:height="35dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-</RelativeLayout>
+</LinearLayout>

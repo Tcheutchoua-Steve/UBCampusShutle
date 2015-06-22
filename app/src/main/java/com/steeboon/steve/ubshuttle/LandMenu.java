@@ -19,9 +19,9 @@ public class LandMenu extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.land_menu);
-        String[] menu = getResources().getStringArray(R.array.mainMenu);
+        String[] myMenu = getResources().getStringArray(R.array.mainMenu);
 
-        this.setListAdapter(new ArrayAdapter<String>(this, R.layout.land_menu, R.id.landMenu, menu));
+        this.setListAdapter(new ArrayAdapter<String>(this, R.layout.land_menu, R.id.land, myMenu));
 
         //Create listview for the regions
         ListView lv = getListView();
@@ -29,7 +29,7 @@ public class LandMenu extends ListActivity {
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String opt = ((TextView) view).getText().toString();
+                String opt = ((TextView)view).getText().toString();
 
                 //Identifying the deferent items clicked
                 if (opt.equals("General Information")){
@@ -50,7 +50,7 @@ public class LandMenu extends ListActivity {
     }
 
 
-    @Override
+  /*  @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.land_menu, menu);
@@ -70,5 +70,5 @@ public class LandMenu extends ListActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 }
