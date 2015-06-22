@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">UbShuttle</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    // Values added
+    <string name="get_started">Start</string>
+    <string name="welcome">Welcome To The University Of Buea Campus Shuttle App</string>
+    <string name="title_activity_landing_menu">MainMenu</string>
+    <string name="title_activity_gen_info">GenInfo</string>
+    <string name="title_activity_bus_schedule">BusSchedule</string>
+    <string name="title_activity_drivers">Drivers</string>
+
+</resources>
